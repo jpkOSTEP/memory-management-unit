@@ -42,3 +42,10 @@ The `benchmark/` folder contains tests to validate and evaluate performance:
 From root directory:
 ```bash
 make  # Builds libvm.a
+
+
+## 📓 Notes
+
+- Written in **C**, compiled in **32-bit mode** (`-m32`)
+- No external libraries required
+- Designed for educational Operating System and systems programming projects

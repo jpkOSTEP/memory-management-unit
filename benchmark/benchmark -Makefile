@@ -1,0 +1,10 @@
+all: test mtest
+
+test: test.c ../libvm.a ../vm.h
+	gcc -g test.c -L../ -lvm -m32 -o test -lm
+
+mtest: multi_test.c ../libvm.a ../vm.h
+	gcc -g multi_test.c -L../ -lvm -m32 -o mtest -lpthread -lm
+
+clean:
+	rm -rf test mtest
